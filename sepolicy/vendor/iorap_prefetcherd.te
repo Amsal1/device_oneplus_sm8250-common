@@ -1,0 +1,1 @@
+allow iorap_prefetcherd corvus_data_file:file { read open };
