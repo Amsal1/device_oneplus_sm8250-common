@@ -1,6 +1,24 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE           := fstab.qcom
+LOCAL_MODULE_TAGS      := optional
+LOCAL_MODULE_CLASS     := ETC
+LOCAL_SRC_FILES        := etc/fstab.qcom
+LOCAL_REQUIRED_MODULES := fstab.qcom.ramdisk
+LOCAL_MODULE_PATH      := $(TARGET_OUT_VENDOR_ETC)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE           := fstab.qcom.ramdisk
+LOCAL_MODULE_STEM      := fstab.qcom
+LOCAL_MODULE_TAGS      := optional
+LOCAL_MODULE_CLASS     := ETC
+LOCAL_SRC_FILES        := etc/fstab.qcom
+LOCAL_MODULE_PATH      := $(TARGET_RAMDISK_OUT)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE       := init.class_main.sh
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
@@ -133,6 +151,14 @@ LOCAL_MODULE       := ftm_power_config.sh
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/ftm_power_config.sh
+LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init/hw
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := init.cust.rc
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/init.cust.rc
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)/init/hw
 include $(BUILD_PREBUILT)
 
