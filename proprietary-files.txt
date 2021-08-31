@@ -345,8 +345,8 @@ vendor/lib64/camera/fdconfigvideo.bin|296e62a60a81aa7ba153e6d4fd4af34d1b2a4c8b
 vendor/lib64/camera/fdconfigvideolite.bin|296e62a60a81aa7ba153e6d4fd4af34d1b2a4c8b
 vendor/lib64/hw/camera.qcom.so|8b5fed7b428cddf3c6a35d41a48701b60ff40b8c
 
-# Camera firmware
-vendor/firmware/CAMERA_ICP.elf
+# Camera firmware - from OnePlus8TOxygen_15.I.26_OTA_0260_all_2107310159_9fbbe0c
+vendor/firmware/CAMERA_ICP.elf|9372b2c3c4cc7cc3349ef121bd9c6832772f259c
 
 # CDSP
 vendor/bin/cdsprpcd
