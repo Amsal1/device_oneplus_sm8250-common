@@ -218,6 +218,7 @@ PRODUCT_PACKAGES += \
     init.oem.debug.rc \
     init.oem.minidump.sdx55m.rc \
     init.oem.rc \
+    init.color.rc \
     init.oem.sec.rc \
     init.oem_ftm.rc \
     init.oplus_chg.sh \
