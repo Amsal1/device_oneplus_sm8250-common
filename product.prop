@@ -1,3 +1,7 @@
+# Elixir
+ro.elixir.maintainer=Amsal Khan
+org.elixir.device=OnePlus 8T/9R
+
 # Camera
 ro.com.google.lens.oem_camera_package=com.oneplus.camera
 
