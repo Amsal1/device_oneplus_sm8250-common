@@ -12,3 +12,4 @@ allow vl53l1_daemon_main self:{
 
 allow vl53l1_daemon_main sysfs_vl53l1:dir search;
 allow vl53l1_daemon_main sysfs_vl53l1:file rw_file_perms;
+allow vl53l1_daemon_main mnt_vendor_file:dir search;
